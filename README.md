@@ -27,6 +27,7 @@ For Raspberry Pi's Python Script:
 6. Download the downlinkNodeUCA.ino file in this setup repository
 7. Connect UCA Board to the PC, make sure to select RFThings UCA as Board, if it doesn’t exist redo 3.
 8. Verify and Upload code to UCA Board on the IDE
+   
 ### UART Setup
 ![Raspberry-pin-out-Wiringpi](https://github.com/user-attachments/assets/995995b3-68d1-4e8c-9242-f39dbbe61883)
 ### Raspberry Pi Setup
@@ -59,3 +60,11 @@ For Raspberry Pi's Python Script:
 10. Move the autoStartScript.desktop file to /home/raspberrypi/.config/autostart and rename it to <GUI Controller>
 11. Modify the read_serial.py PATH inside <GUI Controller> to it's corresponding PATH
 12. Enjoy the Python script automatically start on reboot !
+
+### Known Bug
+When running the Python Script, there might be a bug reading line 8:
+```py
+ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1) # Adjust the port name as identified
+```
+You can changes /dev/ttyUSB0 to /dev/ttyUSB1 and try again or the reverse (/dev/ttyUSB1 to /dev/ttyUSB0).
+This is a known hardware problem of the Raspberry Pi where the USB port name changes when we unplug and replug the UCA Board.
