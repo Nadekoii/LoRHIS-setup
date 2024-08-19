@@ -2,7 +2,7 @@
 Everything you need to setup the LoRHIS project
 
 ## System Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kN-17XNx0wQ?si=YUWwVEHYZ81-Hlpy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[Watch me!](https://youtu.be/kN-17XNx0wQ?si=_ugtKiUVP83O7ex4)
 
 ## Github Repositories
 All of the repositories for the LoRHIS project can be found below:
